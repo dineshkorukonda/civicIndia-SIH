@@ -12,7 +12,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Top Banner */}
       {bannerVisible && (
         <div className="bg-[#2563eb] text-white px-6 py-3 flex items-center justify-between text-sm">
           <div className="flex items-center gap-2">
@@ -29,7 +28,6 @@ export default function Home() {
         </div>
       )}
 
-      {/* Navigation Bar */}
       <nav className="bg-white px-6 py-4 flex items-center justify-between relative">
         <div className="text-2xl font-bold text-[#2563eb]">Sudhaar</div>
         <div className="hidden md:flex items-center gap-8 text-gray-700 absolute left-1/2 transform -translate-x-1/2">
@@ -45,19 +43,17 @@ export default function Home() {
           </a>
         </div>
         <div className="flex items-center gap-6 ml-auto">
-          <a href="#" className="text-gray-700 hover:text-[#2563eb] transition-colors">
+          <a href="/auth/login" className="text-gray-700 hover:text-[#2563eb] transition-colors">
             Login
           </a>
-          <button className="bg-[#2563eb] text-white px-6 py-2 rounded-full flex items-center gap-2 hover:bg-[#1e40af] transition-colors">
+          <a href="/auth/signup" className="bg-[#2563eb] text-white px-6 py-2 rounded-full flex items-center gap-2 hover:bg-[#1e40af] transition-colors">
             Sign Up <HiArrowRight />
-          </button>
+          </a>
         </div>
       </nav>
 
-      {/* Main Content */}
       <main className="max-w-7xl mx-auto px-6 py-12 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Section - Hero Content */}
           <div className="space-y-8">
             <div className="text-[#2563eb] text-sm font-semibold uppercase tracking-wide">
               START REPORTING
@@ -84,9 +80,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right Section - Feature Grid */}
           <div className="grid grid-cols-2 gap-4">
-            {/* Top Left - Mobile App Visual */}
             <div className="bg-gray-200 rounded-lg p-6 flex items-center justify-center relative overflow-hidden min-h-[280px]">
               <div className="absolute top-4 right-4 space-y-2">
                 <div className="w-12 h-1 bg-white rounded"></div>
@@ -106,7 +100,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Top Right - Currencies */}
             <div className="bg-[#f5e6d3] rounded-tl-2xl rounded-br-2xl p-6 flex flex-col justify-between relative min-h-[280px]">
               <div></div>
               <div>
@@ -118,7 +111,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Bottom Left - Users Active */}
             <div className="bg-[#dbeafe] rounded-tl-2xl rounded-br-2xl p-6 flex flex-col relative min-h-[280px]">
               <div className="absolute top-4 left-4 flex gap-2">
                 <div className="w-3 h-3 bg-[#2563eb] rounded-full"></div>
@@ -139,7 +131,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Bottom Right - Saving */}
             <div className="bg-[#2563eb] rounded-lg p-6 flex flex-col justify-between min-h-[280px]">
               <div className="flex items-center justify-between mb-4">
                 <div className="text-4xl lg:text-5xl font-bold text-white">2,850</div>
@@ -147,7 +138,6 @@ export default function Home() {
               </div>
               <div className="mt-auto">
                 <div className="h-24 relative mb-3">
-                  {/* Simple line chart representation */}
                   <svg className="w-full h-full" viewBox="0 0 100 60" preserveAspectRatio="none">
                     <polyline
                       points="0,50 10,45 20,40 30,35 40,30 50,25 60,20 70,15 80,10 90,5 100,0"
@@ -166,14 +156,11 @@ export default function Home() {
         </div>
       </main>
 
-      {/* New Feature Section */}
       <section className="max-w-7xl mx-auto px-6 py-16 lg:py-24">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <div className="text-sm uppercase tracking-wider text-gray-500 mb-4">ABOUT US</div>
         </div>
 
-        {/* Hero Text */}
         <div className="text-center mb-16 max-w-4xl mx-auto">
           <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
             One platform for all your{" "}
@@ -185,17 +172,13 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Feature Blocks */}
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {/* Left Block - Track Progress */}
           <div className="bg-[#2563eb] rounded-tl-3xl rounded-br-3xl p-5 lg:p-8 relative overflow-hidden min-h-[260px] flex flex-col">
             <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4">
               Track Resolution Progress
             </h3>
             
-            {/* Bar Chart Visualization */}
             <div className="flex-grow flex items-end gap-2 mb-4 relative">
-              {/* Bars */}
               <div className="flex items-end gap-2 flex-grow mb-8">
                 <div className="bg-blue-200 h-10 w-8 rounded-t"></div>
                 <div className="bg-blue-200 h-16 w-8 rounded-t"></div>
@@ -203,7 +186,6 @@ export default function Home() {
                 <div className="bg-blue-200 h-24 w-8 rounded-t"></div>
               </div>
               
-              {/* Arrow */}
               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex flex-col items-center">
                 <div className="text-white text-2xl font-bold mb-1">12,000</div>
                 <svg
@@ -217,13 +199,11 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right Block - Global Reach */}
           <div className="bg-[#e0f2fe] rounded-tr-3xl rounded-bl-3xl p-5 lg:p-8 relative overflow-hidden min-h-[260px] flex flex-col">
             <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
               Report from Anywhere
             </h3>
 
-            {/* Background Pattern */}
             <div className="absolute inset-0 opacity-10">
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <div className="w-64 h-64 border-2 border-blue-600 rounded-full"></div>
@@ -233,7 +213,6 @@ export default function Home() {
             </div>
 
             <div className="relative z-10 flex-grow flex flex-col justify-between">
-              {/* Top Section - Submission Card */}
               <div className="flex justify-start mb-2">
                 <div className="bg-white rounded-lg shadow-lg p-2.5 max-w-[160px]">
                   <div className="flex items-center gap-2 mb-1.5">
@@ -252,11 +231,9 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Center - Globe */}
               <div className="flex justify-center items-center my-2">
                 <div className="relative">
                   <FaGlobe className="w-20 h-20 text-blue-600 opacity-80" />
-                  {/* Wireframe effect */}
                   <svg
                     className="absolute inset-0 w-20 h-20"
                     viewBox="0 0 100 100"
@@ -273,7 +250,6 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Bottom Section - Resolution Card */}
               <div className="flex justify-end">
                 <div className="bg-[#2563eb] rounded-lg shadow-lg p-2.5 max-w-[160px]">
                   <div className="flex items-center gap-2 mb-1.5">
@@ -291,7 +267,6 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Flags at bottom */}
               <div className="flex justify-end gap-1.5 mt-2">
                 <div className="w-6 h-6 bg-gradient-to-b from-red-600 via-white to-blue-600 rounded-full border-2 border-gray-300"></div>
                 <div className="w-6 h-6 bg-gradient-to-b from-yellow-500 via-red-600 to-black rounded-full border-2 border-gray-300"></div>
@@ -302,14 +277,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Our Mission Section */}
       <section className="max-w-7xl mx-auto px-6 py-16 lg:py-24">
-        {/* Section Header */}
         <div className="text-center mb-12">
           <div className="text-sm uppercase tracking-wider text-gray-500 mb-8">OUR MISSION</div>
         </div>
 
-        {/* Main Heading and Description */}
         <div className="mb-12 max-w-4xl">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Make Your City, Well-maintained
@@ -319,9 +291,7 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Feature Cards */}
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {/* Card 1 - Easy Reporting */}
           <div className="bg-white rounded-2xl p-6 lg:p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
             <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
               <HiDocumentText className="w-6 h-6 text-blue-600" />
@@ -335,7 +305,6 @@ export default function Home() {
             </button>
           </div>
 
-          {/* Card 2 - Real-time Tracking */}
           <div className="bg-white rounded-2xl p-6 lg:p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
             <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
               <HiChartBar className="w-6 h-6 text-blue-600" />
@@ -349,7 +318,6 @@ export default function Home() {
             </button>
           </div>
 
-          {/* Card 3 - Community Impact */}
           <div className="bg-[#dbeafe] rounded-2xl p-6 lg:p-8 shadow-sm border border-blue-200 hover:shadow-md transition-shadow">
             <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
               <HiUsers className="w-6 h-6 text-white" />
@@ -365,9 +333,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Impact Section */}
       <section className="bg-[#2563eb] py-16 lg:py-24 relative overflow-hidden">
-        {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <svg className="absolute inset-0 w-full h-full" preserveAspectRatio="none" viewBox="0 0 1200 200">
             <path
@@ -383,7 +349,6 @@ export default function Home() {
         </div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
-          {/* Section Header */}
           <div className="text-center mb-12">
             <div className="text-sm uppercase tracking-wider text-blue-200 mb-4">IMPACT</div>
             <h2 className="text-4xl lg:text-5xl font-bold text-white">
@@ -391,15 +356,12 @@ export default function Home() {
             </h2>
           </div>
 
-          {/* Statistics */}
           <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-            {/* Stat 1 */}
             <div className="text-center">
               <div className="text-6xl lg:text-7xl font-bold text-white mb-4">15K+</div>
               <div className="text-xl text-blue-100">Issues Resolved</div>
             </div>
 
-            {/* Stat 2 */}
             <div className="text-center">
               <div className="text-6xl lg:text-7xl font-bold text-white mb-4">8,500+</div>
               <div className="text-xl text-blue-100">Active Citizens</div>
@@ -408,10 +370,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQ Section */}
       <section className="max-w-7xl mx-auto px-6 py-16 lg:py-24">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* Left Side - Label and Heading */}
           <div>
             <div className="text-sm uppercase tracking-wider text-gray-500 mb-4">HELP CENTER</div>
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
@@ -419,9 +379,7 @@ export default function Home() {
             </h2>
           </div>
 
-          {/* Right Side - FAQ Items */}
           <div className="space-y-4">
-            {/* FAQ 1 */}
             <div className="border-b border-gray-200 pb-4">
               <button
                 onClick={() => setOpenFaq(openFaq === 0 ? -1 : 0)}
@@ -441,7 +399,6 @@ export default function Home() {
               )}
             </div>
 
-            {/* FAQ 2 - Expanded by default */}
             <div className="border-b border-gray-200 pb-4">
               <button
                 onClick={() => setOpenFaq(openFaq === 1 ? -1 : 1)}
@@ -461,7 +418,6 @@ export default function Home() {
               )}
             </div>
 
-            {/* FAQ 3 */}
             <div className="border-b border-gray-200 pb-4">
               <button
                 onClick={() => setOpenFaq(openFaq === 2 ? -1 : 2)}
@@ -481,7 +437,6 @@ export default function Home() {
               )}
             </div>
 
-            {/* FAQ 4 */}
             <div className="border-b border-gray-200 pb-4">
               <button
                 onClick={() => setOpenFaq(openFaq === 3 ? -1 : 3)}
@@ -501,7 +456,6 @@ export default function Home() {
               )}
             </div>
 
-            {/* FAQ 5 */}
             <div className="border-b border-gray-200 pb-4">
               <button
                 onClick={() => setOpenFaq(openFaq === 4 ? -1 : 4)}
@@ -524,9 +478,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="bg-[#2563eb] py-16 lg:py-24 relative overflow-hidden">
-        {/* Decorative Stars */}
         <div className="absolute top-8 right-8 lg:top-12 lg:right-12 opacity-20">
           <div className="relative">
             <FaStar className="w-16 h-16 text-white absolute top-0 right-0" />
@@ -536,7 +488,6 @@ export default function Home() {
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Side - Text Content */}
             <div>
               <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                 Change the way your{" "}
@@ -551,12 +502,9 @@ export default function Home() {
               </button>
             </div>
 
-            {/* Right Side - Visual Element */}
             <div className="relative flex items-center justify-center">
               <div className="relative w-full max-w-md">
-                {/* City/Community Illustration */}
                 <div className="grid grid-cols-3 gap-4">
-                  {/* Buildings/Infrastructure Icons */}
                   <div className="space-y-3">
                     <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4 flex items-center justify-center">
                       <FaCity className="w-8 h-8 text-white" />
@@ -588,12 +536,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-white border-t border-gray-200">
-        {/* Upper Footer Section */}
         <div className="max-w-7xl mx-auto px-6 py-12 lg:py-16">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 lg:gap-12">
-            {/* Column 1 - Citizen */}
             <div>
               <h3 className="text-base font-bold text-gray-900 mb-4">Citizen</h3>
               <ul className="space-y-3">
@@ -625,7 +570,6 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* Column 2 - Support */}
             <div>
               <h3 className="text-base font-bold text-gray-900 mb-4">Support</h3>
               <ul className="space-y-3">
@@ -652,7 +596,6 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* Column 3 - City */}
             <div>
               <h3 className="text-base font-bold text-gray-900 mb-4">City</h3>
               <ul className="space-y-3">
@@ -679,7 +622,6 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* Column 4 - Organization */}
             <div>
               <h3 className="text-base font-bold text-gray-900 mb-4">Organization</h3>
               <ul className="space-y-3">
@@ -706,7 +648,6 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* Right Side - Logo, Address, Language */}
             <div className="md:col-span-1 lg:col-span-1">
               <div className="text-3xl font-bold text-[#2563eb] mb-6">Sudhaar</div>
               <p className="text-sm text-gray-600 leading-relaxed mb-6">
@@ -723,18 +664,14 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Separator */}
         <div className="border-t border-gray-200"></div>
 
-        {/* Bottom Footer Section */}
         <div className="max-w-7xl mx-auto px-6 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            {/* Copyright */}
             <div className="text-sm text-gray-600">
               © {new Date().getFullYear()} Sudhaar Municipal Government. All rights reserved.
             </div>
 
-            {/* Legal Links */}
             <div className="flex flex-wrap gap-6">
               <a href="#" className="text-sm text-gray-600 hover:text-[#2563eb] transition-colors">
                 Privacy Policy
